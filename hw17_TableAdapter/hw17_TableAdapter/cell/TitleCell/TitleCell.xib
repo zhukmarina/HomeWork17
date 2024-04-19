@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="81" id="RR9-4m-xaz" customClass="TitleCell" customModule="hw17_TableAdapter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="81"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RR9-4m-xaz" id="7BA-rV-A0D">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="81"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="face.smiling.inverse" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="spv-Tn-XKY">
+                        <rect key="frame" x="10" y="11" width="60" height="58.666666666666671"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="YQD-vy-olo"/>
+                            <constraint firstAttribute="width" constant="60" id="hxS-f4-cs2"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JuX-76-0Fr">
+                        <rect key="frame" x="90" y="30" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhJ-G4-Csy">
+                        <rect key="frame" x="329" y="23" width="44" height="35"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="greaterthan" catalog="system"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="JuX-76-0Fr" firstAttribute="leading" secondItem="spv-Tn-XKY" secondAttribute="trailing" constant="20" id="1O7-G8-tcN"/>
+                    <constraint firstItem="spv-Tn-XKY" firstAttribute="top" secondItem="7BA-rV-A0D" secondAttribute="top" constant="10" id="5XG-Ju-itx"/>
+                    <constraint firstItem="JuX-76-0Fr" firstAttribute="centerY" secondItem="7BA-rV-A0D" secondAttribute="centerY" id="CSL-vh-BKd"/>
+                    <constraint firstItem="zhJ-G4-Csy" firstAttribute="centerY" secondItem="7BA-rV-A0D" secondAttribute="centerY" id="Dj7-Gh-4RC"/>
+                    <constraint firstAttribute="bottom" secondItem="JuX-76-0Fr" secondAttribute="bottom" constant="30" id="K9M-21-opO"/>
+                    <constraint firstAttribute="bottom" secondItem="spv-Tn-XKY" secondAttribute="bottom" constant="10" id="L1u-np-iSP"/>
+                    <constraint firstItem="spv-Tn-XKY" firstAttribute="leading" secondItem="7BA-rV-A0D" secondAttribute="leading" constant="10" id="SzD-XQ-FHv"/>
+                    <constraint firstAttribute="trailing" secondItem="zhJ-G4-Csy" secondAttribute="trailing" constant="20" id="zfR-eF-bcy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="arrowButton" destination="zhJ-G4-Csy" id="te4-dz-hAt"/>
+                <outlet property="titleLabel" destination="JuX-76-0Fr" id="9uv-eq-Kb7"/>
+            </connections>
+            <point key="canvasLocation" x="287.78625954198475" y="29.929577464788736"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="face.smiling.inverse" catalog="system" width="128" height="123"/>
+        <image name="greaterthan" catalog="system" width="128" height="108"/>
+    </resources>
+</document>
